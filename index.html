@@ -5,75 +5,127 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tosheeka Dhansa - Portfolio</title>
   <style>
+    /* Global Styles */
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
-      background: #f5f7fa;
+      background-color: #f4f6f9;
       color: #333;
+      line-height: 1.6;
     }
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+
+    /* Header */
     header {
-      background: #2c3e50;
-      padding: 20px;
-      text-align: center;
-      color: white;
-    }
-    nav {
       background: #34495e;
+      color: white;
+      padding: 60px 0;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-bottom: 0;
+    }
+
+    /* Navigation */
+    nav {
+      background: #2c3e50;
       display: flex;
       justify-content: center;
-      gap: 30px;
-      padding: 15px 0;
+      padding: 12px 0;
     }
     nav a {
       color: white;
       text-decoration: none;
       font-weight: bold;
+      padding: 14px 20px;
+      transition: background 0.3s ease;
     }
     nav a:hover {
-      text-decoration: underline;
+      background: #2980b9;
+      border-radius: 4px;
     }
+
+    /* Container */
     .container {
-      max-width: 1000px;
-      margin: 30px auto;
-      padding: 20px;
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 30px;
       background: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     }
+
+    /* Profile Section */
     .profile {
       text-align: center;
+      padding-bottom: 40px;
     }
     .profile img {
-      width: 120px;
-      height: 120px;
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
       margin-bottom: 15px;
-      border: 3px solid #3498db;
+      border: 4px solid #3498db;
     }
-    h1, h2 {
-      color: #2c3e50;
+    .profile h2 {
+      margin-bottom: 10px;
+      font-size: 2em;
     }
+    .profile p {
+      font-size: 1.2em;
+      color: #7f8c8d;
+    }
+
+    /* Project Section */
     .section {
-      margin-top: 40px;
+      margin-top: 60px;
+    }
+    .projects-btns {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 30px;
     }
     .project-btn {
       display: inline-block;
-      margin-top: 20px;
-      padding: 12px 25px;
+      padding: 15px 30px;
       background-color: #3498db;
       color: white;
-      border-radius: 30px;
-      text-decoration: none;
+      border-radius: 25px;
       font-weight: bold;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
     }
     .project-btn:hover {
       background-color: #2980b9;
     }
-    .projects-btns {
+
+    /* Contact Section */
+    .contact-btn {
+      display: inline-block;
+      padding: 14px 28px;
+      background-color: #3498db;
+      color: white;
+      font-size: 1.1em;
+      border-radius: 50px;
+      text-decoration: none;
+      margin-top: 30px;
       text-align: center;
-      margin-top: 50px;
+      transition: background-color 0.3s ease;
     }
+    .contact-btn:hover {
+      background-color: #2980b9;
+    }
+
   </style>
 </head>
 <body>
@@ -91,26 +143,28 @@
 
 <div class="container">
 
+  <!-- About Me Section -->
   <section id="about" class="profile">
     <img src="link_to_your_photo.jpg" alt="Profile Picture">
-    <h2>About Me</h2>
-    <p>Hi! I'm Tosheeka, a passionate BI Developer and Automation Expert. I work with Power BI, Power Apps, Power Automate, Python, SQL, Advanced Excel, and SAP Analytics Cloud to create smart solutions that solve real business problems.</p>
+    <h2>Tosheeka Dhansa</h2>
+    <p>I'm a passionate BI Developer and Automation Expert, working with tools like Power BI, Power Apps, Power Automate, Python, SQL, Advanced Excel, and SAP Analytics Cloud to create intelligent solutions to real business problems.</p>
   </section>
 
+  <!-- Projects Section -->
   <section id="projects" class="section">
     <h2>My Projects</h2>
-    
     <div class="projects-btns">
-      <a href="link_to_project1" class="project-btn">Project 1 - Power BI Dashboard</a>
-      <a href="link_to_project2" class="project-btn">Project 2 - Power Apps Solution</a>
-      <a href="link_to_project3" class="project-btn">Project 3 - Power Automate Workflow</a>
+      <a href="link_to_project1" class="project-btn">Power BI Dashboard</a>
+      <a href="link_to_project2" class="project-btn">Power Apps Solution</a>
+      <a href="link_to_project3" class="project-btn">Power Automate Workflow</a>
     </div>
   </section>
 
+  <!-- Contact Section -->
   <section id="contact" class="section">
     <h2>Contact Me</h2>
-    <p>Interested in working together or discussing a project? Feel free to reach out!</p>
-    <a class="project-btn" href="mailto:your_email@example.com">Email Me</a>
+    <p>Interested in collaborating or discussing a project? Feel free to reach out!</p>
+    <a href="mailto:your_email@example.com" class="contact-btn">Email Me</a>
   </section>
 
 </div>
